@@ -157,7 +157,7 @@ main {
 
 #menu .card {
   text-align: center;
-  max-inline-size: 25%;
+  max-inline-size: 30%;
   padding: 10px;
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
