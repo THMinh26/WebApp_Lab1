@@ -133,6 +133,7 @@ main {
 }
 
 #menu a {
+  display: inline-block;
   padding: 5px;
   border-radius: 5px;
   color: var(--secondary-color);
@@ -156,6 +157,7 @@ main {
 }
 
 #menu .card {
+  line-height: 1.6em;
   text-align: center;
   max-inline-size: 30%;
   padding: 10px;
