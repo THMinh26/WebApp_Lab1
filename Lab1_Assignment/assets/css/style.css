@@ -7,6 +7,7 @@
 :root {
   --primary-bg-color: rgba(112, 0, 0, 0.842);
   --primary-color: rgb(253, 213, 163);
+  --secondary-color: rgb(77, 27, 0);
 }
 
 body {
@@ -31,19 +32,18 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 main {
   display: flex;
   font-size: 1.5em;
+  text-align: center;
   justify-content: center;
   align-items: center;
   color: var(--primary-color);
   margin-top: 30px;
   height: 300px;
-  background: url(/Lab1_Assignment/assets/img/beans.jpg) no-repeat
-    center/contain;
+  background: url(../img/beans.jpg) no-repeat center/contain;
 }
 
 .flex {
@@ -81,14 +81,127 @@ main {
   opacity: 0.8;
 }
 
+#about {
+  background-color: var(--primary-bg-color);
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  flex-wrap: wrap;
+}
+
+#about .content {
+  width: 70%;
+  text-align: left;
+  padding: 10px 40px;
+  color: var(--primary-color);
+  overflow: hidden;
+  flex: 2;
+}
+
+#about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#about img {
+  flex: 1;
+  max-inline-size: 40%;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-color);
+  margin: 0 30px;
+}
+
+#menu h1 {
+  margin: 10px;
+  color: var(--secondary-color);
+}
+
+#menu p {
+  margin: 10px 0;
+}
+
+#menu a {
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+#menu a:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
+}
+
+#menu a:focus {
+  opacity: 0.8;
+}
+
+#menu .card-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+#menu .card {
+  text-align: center;
+  max-inline-size: 25%;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-bg-color);
+}
+
+#menu .card img {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     row-gap: 20px;
-    padding: 0px 30px 20px;
+    padding: 20px 0;
   }
 
   main {
     font-size: 1em;
+  }
+
+  #main-menu {
+    gap: 3px;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #about .content {
+    width: 100%;
+  }
+
+  #about h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  #about img {
+    max-inline-size: 100%;
+  }
+
+  #menu .card-container {
+    flex-direction: column;
+  }
+  #menu .card {
+    max-inline-size: 100%;
   }
 }
