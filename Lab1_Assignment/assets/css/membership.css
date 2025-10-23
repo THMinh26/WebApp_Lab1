@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: rgba(112, 0, 0, 0.842);
+  --primary-color: rgb(253, 213, 163);
+  --secondary-color: rgb(77, 27, 0);
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  padding: 0px 30px;
+}
+
+header h1 {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 60px;
+}
+
+#main-menu {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#main-menu a {
+  padding: 10px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+#main-menu a:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-bg-color);
+}
+
+#main-menu a:focus {
+  opacity: 0.8;
+}
+
+main {
+  margin-top: 30px;
+  font-size: 1em;
+  color: var(--secondary-color);
+  height: 300px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: #f3f3f3;
+  border: 1px solid black;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.radio {
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.radio label {
+  margin-right: 5px;
+  display: inline;
+}
+
+.radio input {
+  margin-right: 8px;
+}
+
+.checkbox label {
+  font-weight: normal;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+select {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  padding: 5px 8px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 0;
+  }
+
+  main {
+    font-size: 1em;
+  }
+
+  #main-menu {
+    gap: 3px;
+  }
+
+  /* #about {
+        flex-direction: column;
+      }
+    
+      #about .content {
+        width: 100%;
+      }
+    
+      #about h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+    
+      #about img {
+        max-inline-size: 100%;
+      }
+    
+      #menu .card-container {
+        flex-direction: column;
+      }
+      #menu .card {
+        max-inline-size: 100%;
+      } */
+}

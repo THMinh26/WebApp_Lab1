@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership</title>
+    <link
+      rel="stylesheet"
+      href="../Lab1_Assignment/assets/css/membership.css"
+    />
+  </head>
+  <body>
+    <header class="flex">
+      <div class="logo flex">
+        <img
+          id="logo"
+          src="../Lab1_Assignment/assets/img/java-coffee-cup-logo.png"
+          alt="Logo"
+        />
+        <h1>Macs Coffee</h1>
+      </div>
+      <ul id="main-menu" class="flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="membership.html">Membership</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>Fill out this form to become our member</h1>
+      <div class="container">
+        <form action="#" method="post">
+          <label for="fullname">Fullname</label>
+          <input type="text" id="fullname" name="fullname" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="gender">Gender</label>
+          <div class="radio">
+            <label for="">Male</label
+            ><input type="radio" name="gender" value="m" required />
+            <label for="">Female</label
+            ><input type="radio" name="gender" value="f" required />
+            <label for="">Other</label
+            ><input type="radio" name="gender" value="o" required />
+          </div>
+          <label for="">Additional options</label>
+          <div class="checkbox">
+            <label for=""
+              ><input type="checkbox" name="option" value="promotion" />Receive
+              promotional emails and newsletters</label
+            >
+            <label for=""
+              ><input type="checkbox" name="option" value="discount" />Get
+              birthday discounts</label
+            >
+            <label for=""
+              ><input type="checkbox" name="option" value="event" />Participate
+              in member-only events</label
+            >
+          </div>
+          <label for="plan">Select membership plan</label>
+          <select name="plan" id="plan">
+            <option value="basic">Basic Plan (10k/mo)</option>
+            <option value="silver">Silver Plan (20k/mo)</option>
+            <option value="gold">Gold Plan (30k/mo)</option>
+          </select>
+          <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
